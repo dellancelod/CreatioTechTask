@@ -1,0 +1,19 @@
+﻿{
+  "Descriptor": {
+    "UId": "2b6f65d1-4573-90e3-3022-dc3fba5f544d",
+    "Name": "UsrTestTask",
+    "Type": 1,
+    "ModifiedOnUtc": "\/Date(1789736874000)\/",
+    "Maintainer": "Customer",
+    "ProjectPath": "Files/UsrTestTask.csproj",
+    "Description": "Equipment request test task",
+    "DependsOn": [
+      {
+        "UId": "012e2e14-082b-ac2b-da5a-2fc87bad41d4",
+        "PackageVersion": "7.8.0",
+        "Name": "CrtCore",
+        "Type": 1
+      }
+    ]
+  }
+}

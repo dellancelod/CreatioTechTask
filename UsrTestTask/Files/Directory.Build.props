@@ -1,0 +1,5 @@
+<Project>
+	<ItemGroup Label="Entity Files" Condition="'$(PkgPath)' != ''">
+		<Compile Include="$(PkgPath)/UsrTestTask/Schemas/UsrRequestPriority/UsrRequestPriority.cs" Condition="Exists('$(PkgPath)/UsrTestTask/Schemas/UsrRequestPriority/UsrRequestPriority.cs')" />
+	</ItemGroup>
+</Project>

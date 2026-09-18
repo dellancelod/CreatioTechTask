@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "61cd9731-cabd-447c-ade1-66898944b280",
+    "Name": "UsrRequestPriority",
+    "ModifiedOnUtc": "\/Date(1789736997000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Request priority",
+    "DependsOn": []
+  }
+}
