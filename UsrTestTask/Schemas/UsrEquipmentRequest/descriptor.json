@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "9de6f4e2-2957-4c2f-abd9-083d11442f39",
+    "Name": "UsrEquipmentRequest",
+    "ModifiedOnUtc": "\/Date(1789739713000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Equipment request"
+  }
+}
