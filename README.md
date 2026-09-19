@@ -23,9 +23,52 @@
 - Redis;
 - File System Development Mode.
 
-Для роботи з пакетом було увімкнено режим розробки у файловій системі. Після цього пакет `UsrTestTask` вивантажувався з Creatio у *Terrasoft.Configuration/Pkg/UsrTestTask*.
+1. Спочатку було завантажено та розпаковано 10.0.0.858_SalesEnterprise_Marketing_ServiceEnterprise_Softkey_PostgreSQL_ENU.zip.
 
-Створювати Git репозитарій у самій папці Pkg потребувало би дуже об'ємний .gitignore, тому було вирішено вигружати файли пакету в іншу папку. Для зручності був написаний скріпт для PowerShell.
+2. Увімкнено Internet Information Services.
+ 
+Всередині IIS було встановлено:
+```
+Web Management Tools
+    IIS Management Console
+
+World Wide Web Services
+    Application Development Features
+        .NET Extensibility
+        ASP.NET
+        ISAPI Extensions
+        ISAPI Filters
+
+    Common HTTP Features
+        Default Document
+        Static Content
+        HTTP Errors
+    Security
+        Request Filtering
+        Basic Authentication
+        Windows Authentication
+.NET Framework 4.x Advanced Services
+    ASP.NET
+    WCF Services
+        HTTP Activation
+```
+3. Було встановлено PostgreSQL Serer 11, Command Line Tools та pgAdmin для роботи з БД. Creatio рекомендує окремо мати адміністративного користувача PostgreSQL для deployment і менш привілейованого користувача для самої програми, тому було створено двух користувачів: creatio_sysadmin та creatio_app. Було створено базу даних creatio_test та запущено backup _BPMonline1000SalesEnterprise_Marketing_ServiceEnterprise.backup_. Після цього, за рекомендацією з документації, було запущено скрипт CreateTypeCastsPostgreSql.sql та ChangeDbObjectsOwner.sql. Під час виконання останнього ставалася помилка, що потребувало збільшити max_locks_per_transaction з 64 до 1024 бо інакше ChangeDbObjectsOwner.sql був лімітований по кількості одночасно залочених об'єктів.
+
+4. Було піднято Redis, бо Creatio використовує його як cache/session server. Вирішив, що найпростіше буде зробити це через Docker.
+
+5. Налаштував ConnectionString.config.
+
+6. Налаштував права на директорію, на майбутнє для File System Development Mode.
+
+7. Створив Application Pool у IIS.
+
+8. Створив сайт Creatio в IIS.
+
+9. Запустив Creatio на localhost:8080.
+
+10. У Web.config було змінено fileDesignMode на true, a UseStaticFileContent на false - таким чином було увімкнено режим розробки у файловій системі. Після цього пакет `UsrTestTask` вивантажувався з Creatio у *Terrasoft.Configuration/Pkg/UsrTestTask*.
+
+11. Створювати Git репозитарій у самій папці Pkg потребувало би дуже об'ємний .gitignore, тому було вирішено вигружати файли пакету в іншу папку. Для зручності був написаний скріпт для PowerShell.
 
 *syncpackage.ps1:*
 ```bash
