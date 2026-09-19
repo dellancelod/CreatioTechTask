@@ -1419,6 +1419,7 @@
 	</ItemGroup>
 	<ItemGroup Label="Standalone package external assembly references" />
 	<ItemGroup Label="Entity Files">
+		<Compile Remove="$(RelativePkgFolderPath)/UsrTestTask/Schemas/UsrEquipmentRequest/UsrEquipmentRequest.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrTestTask/Schemas/UsrEquipmentRequest/UsrEquipmentRequest.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrTestTask/Schemas/UsrRequestPriority/UsrRequestPriority.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrTestTask/Schemas/UsrRequestPriority/UsrRequestPriority.cs')" />
 	</ItemGroup>
 	<ItemGroup Label="3rd Party References"></ItemGroup>
