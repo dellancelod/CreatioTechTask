@@ -52,7 +52,11 @@ World Wide Web Services
     WCF Services
         HTTP Activation
 ```
-3. Було встановлено PostgreSQL Serer 11, Command Line Tools та pgAdmin для роботи з БД. Creatio рекомендує окремо мати адміністративного користувача PostgreSQL для deployment і менш привілейованого користувача для самої програми, тому було створено двух користувачів: creatio_sysadmin та creatio_app. Було створено базу даних creatio_test та запущено backup _BPMonline1000SalesEnterprise_Marketing_ServiceEnterprise.backup_. Після цього, за рекомендацією з документації, було запущено скрипт CreateTypeCastsPostgreSql.sql та ChangeDbObjectsOwner.sql. Під час виконання останнього ставалася помилка, що потребувало збільшити max_locks_per_transaction з 64 до 1024 бо інакше ChangeDbObjectsOwner.sql був лімітований по кількості одночасно залочених об'єктів.
+3. Було встановлено PostgreSQL Serer 11, Command Line Tools та pgAdmin для роботи з БД. Creatio рекомендує окремо мати адміністративного користувача PostgreSQL для deployment і менш привілейованого користувача для самої програми, тому було створено двух користувачів: creatio_sysadmin та creatio_app. Було створено базу даних creatio_test
+```powershell
+.\psql.exe --host localhost --port 5432 --username=creatio_sysadmin --dbname=postgres --command "CREATE DATABASE creatio_clean WITH OWNER=creatio_app ENCODING='UTF8' CONNECTION LIMIT=-1"
+```
+та запущено backup _BPMonline1000SalesEnterprise_Marketing_ServiceEnterprise.backup_. Після цього, за рекомендацією з документації, було запущено скрипт CreateTypeCastsPostgreSql.sql та ChangeDbObjectsOwner.sql. Під час виконання останнього ставалася помилка, що потребувало збільшити max_locks_per_transaction з 64 до 1024 бо інакше ChangeDbObjectsOwner.sql був лімітований по кількості одночасно залочених об'єктів.
 
 4. Було піднято Redis, бо Creatio використовує його як cache/session server. Вирішив, що найпростіше буде зробити це через Docker.
 
