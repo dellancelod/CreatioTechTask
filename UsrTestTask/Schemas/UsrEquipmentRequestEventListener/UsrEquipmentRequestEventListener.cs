@@ -5,7 +5,7 @@
 	using Terrasoft.Core.Entities.Events;
 
 	
-	[EntityEventListener(SchemaName = "UsrEquipmnetRequest")]
+	[EntityEventListener(SchemaName = "UsrEquipmentRequest")]
 	public class UsrEquipmentRequestEventListener : BaseEntityEventListener {
 		public override void OnSaving(
 			object sender,
@@ -36,7 +36,7 @@
 			decimal totalAmount = quantity * unitPrice;
 			
 			entity.SetColumnValue(
-				"UsrToalAmount",
+				"UsrTotalAmount",
 				totalAmount
 			);
 			
