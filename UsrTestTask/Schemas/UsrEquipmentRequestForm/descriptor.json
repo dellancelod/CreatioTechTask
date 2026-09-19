@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "2e08b6be-8dcf-4342-b572-797d2fdb3540",
+    "Name": "UsrEquipmentRequestForm",
+    "ModifiedOnUtc": "\/Date(1789844710000)\/",
+    "Parent": {
+      "UId": "f691e828-0b36-42a7-898f-c337e9af67d0",
+      "Name": "BlankPageTemplate"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Equipment request form page"
+  }
+}

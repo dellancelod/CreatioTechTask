@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "aaccf58b-2400-4771-bbc8-9c31232cb8a0",
+    "Name": "UsrEquipmentRequestRelatedPage",
+    "ModifiedOnUtc": "\/Date(1789842930000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Equipment request (Page settings)",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Equipment request form page" />
+			<Item Name="LocalizableStrings.Button_hn47qwv_caption.Value" Value="x" />
+			<Item Name="LocalizableStrings.Button_vadn57r_caption.Value" Value="Save" />
+			<Item Name="LocalizableStrings.addRecord_myi3nr1_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_w4mzhof_caption.Value" Value="Add new" />
+		</Items>
+	</Group>
+</Resources>

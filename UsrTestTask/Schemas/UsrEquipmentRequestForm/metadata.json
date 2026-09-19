@@ -1,0 +1,43 @@
+= MetaData.Schema.UId "2e08b6be-8dcf-4342-b572-797d2fdb3540"
+= MetaData.Schema.A2 "UsrEquipmentRequestForm"
+= MetaData.Schema.A5 "3f91a941-d1bc-431e-8561-9da7700b065f"
++ MetaData.Schema.B2 {
+  "UId": "a7cd2620-d0b4-b752-5e96-c6331307d5d4",
+  "A2": "Button_vadn57r_caption",
+  "A3": "2e08b6be-8dcf-4342-b572-797d2fdb3540",
+  "A4": "2e08b6be-8dcf-4342-b572-797d2fdb3540",
+  "A5": "3f91a941-d1bc-431e-8561-9da7700b065f"
+}
++ MetaData.Schema.B2 {
+  "UId": "e22cb43c-43a8-1343-fb64-9d6582f3231d",
+  "A2": "addRecord_myi3nr1_caption",
+  "A3": "2e08b6be-8dcf-4342-b572-797d2fdb3540",
+  "A4": "2e08b6be-8dcf-4342-b572-797d2fdb3540",
+  "A5": "3f91a941-d1bc-431e-8561-9da7700b065f"
+}
++ MetaData.Schema.B2 {
+  "UId": "17ba0a35-606b-00d5-adbc-07a42a9b07b5",
+  "A2": "addRecord_w4mzhof_caption",
+  "A3": "2e08b6be-8dcf-4342-b572-797d2fdb3540",
+  "A4": "2e08b6be-8dcf-4342-b572-797d2fdb3540",
+  "A5": "3f91a941-d1bc-431e-8561-9da7700b065f"
+}
++ MetaData.Schema.B2 {
+  "UId": "1baee87e-7872-72ac-8ee8-2bff7d0760d3",
+  "A2": "Button_hn47qwv_caption",
+  "A3": "2e08b6be-8dcf-4342-b572-797d2fdb3540",
+  "A4": "2e08b6be-8dcf-4342-b572-797d2fdb3540",
+  "A5": "3f91a941-d1bc-431e-8561-9da7700b065f"
+}
+~ MetaData.Schema.B2 [
+  "a7cd2620-d0b4-b752-5e96-c6331307d5d4",
+  "e22cb43c-43a8-1343-fb64-9d6582f3231d",
+  "17ba0a35-606b-00d5-adbc-07a42a9b07b5",
+  "1baee87e-7872-72ac-8ee8-2bff7d0760d3"
+]
+= MetaData.Schema.B6 "2b6f65d1-4573-90e3-3022-dc3fba5f544d"
+= MetaData.Schema.B8 "10.0.0.858"
+= MetaData.Schema.HD1 "f691e828-0b36-42a7-898f-c337e9af67d0"
++ MetaData.Schema.HD15 1
+= MetaData.Schema.HD6 "define('{0}Structure', ['{0}Resources'], function(resources) {{return {{schemaUId:'{2}',schemaName:'{3}',parentSchemaUId:'{4}',extendParent:{5},type:Terrasoft.SchemaType.ANGULAR_SCHEMA,entitySchema:'',name:'',extend:'Terrasoft.model.BaseViewModel',schema:{{leftPanel:[],rightPanel:[],actions:[],analytics:[]}},methods:{{}},controlsConfig:{{}},customBindings:{{}},bindings:{{}},parameters:{{}},schemaVersion:1,optionalProperties:{{}},schemaDifferences:function(){{\n{1}\n}}}};}});"
++ MetaData.Schema.B7 false
