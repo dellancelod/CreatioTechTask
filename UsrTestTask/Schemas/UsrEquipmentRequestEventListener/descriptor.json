@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "055c4019-ca7c-4f47-a19e-352de6d89875",
     "Name": "UsrEquipmentRequestEventListener",
-    "ModifiedOnUtc": "\/Date(1789825359000)\/",
+    "ModifiedOnUtc": "\/Date(1789833264000)\/",
     "ManagerName": "SourceCodeSchemaManager",
     "Caption": "Equipment Request Event Listener"
   }
