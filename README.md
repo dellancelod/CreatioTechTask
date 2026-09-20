@@ -52,7 +52,7 @@ World Wide Web Services
     WCF Services
         HTTP Activation
 ```
-3. Було встановлено PostgreSQL Serer 11, Command Line Tools та pgAdmin для роботи з БД. Creatio рекомендує окремо мати адміністративного користувача PostgreSQL для deployment і менш привілейованого користувача для самої програми, тому було створено двух користувачів: creatio_sysadmin та creatio_app. Було створено базу даних creatio_test
+3. Було встановлено PostgreSQL Server 11, Command Line Tools та pgAdmin для роботи з БД. Creatio рекомендує окремо мати адміністративного користувача PostgreSQL для deployment і менш привілейованого користувача для самої програми, тому було створено двух користувачів: creatio_sysadmin та creatio_app. Було створено базу даних creatio_test
 ```powershell
 .\psql.exe --host localhost --port 5432 --username=creatio_sysadmin --dbname=postgres --command "CREATE DATABASE creatio_clean WITH OWNER=creatio_app ENCODING='UTF8' CONNECTION LIMIT=-1"
 ```
@@ -91,7 +91,7 @@ exit $LASTEXITCODE
 
 І тоді workflow перетворився на: 
 
-_Додати feature в Creatio -> Comple -> Download packages to file system -> syncpackage.ps1 -> commit_
+_Додати feature в Creatio -> Compile -> Download packages to file system -> syncpackage.ps1 -> commit_
 
 ### Виниклі проблеми
 
