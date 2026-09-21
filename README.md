@@ -101,7 +101,7 @@ _Додати feature в Creatio -> Compile -> Download packages to file system 
 
 3. Під час створення об'єкта UsrRequestPriority, стикнувся з неможливістю обрати батьківський клас BaseLookup, що в свою чергу наслідується від BaseObject для того, щоб побудувати правільну архітектуру. Дослідивши питання, я перейшов на Package Dependencies Diagram, щоб побачити які packets dependencies має мій UsrTestTask. Встановив залежність від пакету CrtCore як це рекомендує сама документація Creatio.
 
-4. Спочатку створив FreedomUI сторінки у Application Hub, але потім зрозумів, що папка цього додатку знаходиться за межою UsrTestTask. Встановив CurrentPackageId Defaul value = UsrTestTask у System Settings для уникнення роботи поза межою пакету.
+4. Спочатку створив FreedomUI сторінки у Application Hub, але потім зрозумів, що папка цього додатку знаходиться за межою UsrTestTask. Встановив CurrentPackageId Default value = UsrTestTask у System Settings для уникнення роботи поза межою пакету.
 
 5. Декілька мінорних проблем, як от наприклад у Postman, щоб виконати запит до Creatio REST Api потрібно спочатку пройти аутентифікація через POST-запит до сервису аутентифікації AuthService.svc, для цього у Postman треба було відключити проксі у налаштуваннях.
 
@@ -130,7 +130,7 @@ _Додати feature в Creatio -> Compile -> Download packages to file system 
 - розраховує:
 
 ```text
-Загальна сума = Кількість ? Ціна за одиницю
+Загальна сума = Кількість × Ціна за одиницю
 ```
 
 - забороняє збереження, якщо `Кількість <= 0`;
